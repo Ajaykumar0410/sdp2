@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Industrial Page</title>
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    {% load static %}
+    <title> {% block title %}Home{% endblock %}</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/all.css' %}">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'css/responsive.css' %}">
+    <link rel="stylesheet" href="{% static 'css/custom.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+</head>
+<body>
+{% csrf_token %}
+<header class="main-header">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light navbar-default bootsnav">
+        <div class="container">
+            <div class="navbar-header">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-menu"
+                        aria-controls="navbars-rs-food" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand" href=""><img src="{% static 'images/logo.png' %}" class="logo" alt="" height="2opx"></a>
+            </div>
+
+            <div class="collapse navbar-collapse" id="navbar-menu">
+                <ul class="nav navbar-nav ml-auto" data-in="fadeInDown" data-out="fadeOutUp">
+                    <li class="nav-item active"><a class="nav-link" href ="{% url 'homepage' %}">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{% url 'about' %}">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{% url 'contact' %}">Contact Us</a></li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+
+            <!-- Start Atribute Navigation -->
+            <div class="attr-nav">
+                <ul>
+                    <li class="search"><a href="#"><i class="fa fa-search"></i></a></li>
+
+                </ul>
+            </div>
+            <!-- End Atribute Navigation -->
+        </div>
+
+    </nav>
+    <!-- End Navigation -->
+</header>
+<!-- End Main Top -->
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="banner-frame"><img class="img-fluid" src="{% static 'images/sekhar1.webp' %}" alt="" height="1500px" width="1500px"/>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <h2 class="noo-sh-title-top">CAULIFLOWER <span> </span></h2>
+              <p> Cauliflower is a cruciferous vegetable that is naturally high in fiber and B-vitamins. It provides antioxidants and phytonutrients that can protect against cancer. It also contains fiber to enhance weight loss and digestion, choline that is essential for learning and memory, and many other important nutrients.</p>
+             <br>
+            <a href="http://127.0.0.1:8000/details/"><button>contact</button></a>
+            </div>
+
+        </div>
+
+        <br>
+        <br>
+        <br>
+  <div class="container">
+      <div class = "row">
+
+  </div>
+
+
+
+        <div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="banner-frame"><img class="img-fluid" src="{% static 'images/sekhar2.jpg' %}" alt=""height="1500px" width="1500px"/>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <h2 class="noo-sh-title-top">TOMATO<span> </span></h2>
+
+                <p>  In pure organic farming, there is avoiding every unnatural chemical. In the process of pure farming, fertilizer and pesticides obtain from natural sources. It is called a pure form of organic farming. Integrated organic farming consists of integrated nutrients management and integrated pest management.Tomatoes are used a lot in Italian food. They are also used to make ketchup. Tomatoes are called fruit, because they contain seeds. Tomato seeds are dispersed by being eaten by animals.</p>
+             <br>
+            <a href="http://127.0.0.1:8000/details/"><button>contact</button></a>
+            </div>
+
+        </div>
+<br>
+            <br>
+            <br>
+        <div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="banner-frame"><img class="img-fluid" src="{% static 'images/sekhar3.webp' %}" alt=""height="1500px" width="1500px"/>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <h2 class="noo-sh-title-top">POTATOES<span></span></h2>
+
+                <p> The considerations about the environment and environment of the future.The potato is a starchy tuber of the plant Solanum tuberosum and is a root vegetable native to the Americas. The plant is a perennial in the nightshade family Solanaceae. Potato cultivars appear in a variety of colors, shapes, and sizes.How do you describe a potato? Image result for potatoes about A potato is a vegetable, the Solanum tuberosum. It is a small plant with large leaves. The part of the potato that people eat is a tuber that grows under the ground. A potato contains a lot of starch and other carbohydrates. </p>
+             <br>
+            <a href="http://127.0.0.1:8000/details/"><button>contact</button></a>
+
+            </div>
+
+        </div>
+            <br>
+            <br>
+            <br>
+             <div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+
+                <div class="banner-frame"><img class="img-fluid" src="{% static 'images/sekhar4.jpg' %}" alt=""height="1500px" width="1500px"/>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <h2 class="noo-sh-title-top">carrot<span></span></h2>
+                <p> It is crunchy, tasty, and highly nutritious. Carrots are a particularly good source of beta carotene, fiber, vitamin K1, potassium, and antioxidants ( 1 ). They also have a number of health benefits. They're a weight-loss-friendly food and have been linked to lower cholesterol levels and improved eye health. </p>
+             <br>
+            <a href="http://127.0.0.1:8000/details/"><button>contact</button></a>
+            </div>
+
+        </div>
+                 <br>
+                 <br>
+                 <br>
+                      <div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="banner-frame"><img class="img-fluid" src="{% static 'images/sekhar5.jpg' %}" alt=""height="1500px" width="1500px"/>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                 <h2 class="noo-sh-title-top"> CHILLI <span> </span></h2>
+                <br>
+                <p>Organic farming has mushroomed drastically in importance.Chilli is a fruit which belongs to Capsicum genus. It has many varieties which are differentiated on its pungency measured on Scoville Scale. Chilli fruit when ripened and dried becomes red chilli, which is further grounded to form red chilli powder. These are categorized as hot pepper.</p>
+               <br>
+            <a href="http://127.0.0.1:8000/details/"><button>contact</button></a>
+            </div>
+
+        </div>
+                          <br>
+                          <br>
+                          <br>
+
+<!-- Start Top Search -->
+<div class="top-search">
+    <div class="container">
+        <div class="input-group">
+            <span class="input-group-addon"><i class="fa fa-search"></i></span>
+            <input type="text" class="form-control" placeholder="Search">
+            <span class="input-group-addon close-search"><i class="fa fa-times"></i></span>
+        </div>
+    </div>
+</div>
+<div class="instagram-box">
+    <div class="main-instagram owl-carousel owl-theme">
+        <div class="item">
+            <div class="ins-inner-box">
+                <img src="{% static 'images/91.jpg'%}" alt=""height="500px" width="500px"/>
+                <div class="hov-in">
+                    <a href="http://127.0.0.1:8000/shop"><i></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="ins-inner-box">
+                <img src="{% static 'images/92.jpg' %}" alt=""height="500px" width="500px"/>
+                <div class="hov-in">
+                    <a href="http://127.0.0.1:8000/shop"><i></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="ins-inner-box">
+                <img src="{% static 'images/93.avif'%}" alt=""height="500px" width="500px"/>
+                <div class="hov-in">
+                    <a href="http://127.0.0.1:8000/shop"><i></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="ins-inner-box">
+                <img src="{% static 'images/94.avif'%}" alt=""height="500px" width="500px"/>
+                <div class="hov-in">
+                    <a href="http://127.0.0.1:8000/shop"><i></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="ins-inner-box">
+                <img src="{% static 'images/95.avif'%}" alt=""height="500px" width="500px"/>
+                <div class="hov-in">
+                    <a href="http://127.0.0.1:8000/shop"><i></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="ins-inner-box">
+                <img src="{% static 'images/96.avif'%}" alt=""height="500px" width="500px"/>
+                <div class="hov-in">
+                    <a href="http://127.0.0.1:8000/shop"><i></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="ins-inner-box">
+                <img src="{% static 'images/97.avif'%}" alt=""/>
+                <div class="hov-in">
+                    <a href="http://127.0.0.1:8000/shop"><i></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="ins-inner-box">
+                <img src="{% static 'images/98.avif'%}" alt=""/>
+                <div class="hov-in">
+                    <a href="http://127.0.0.1:8000/shop"><i></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="ins-inner-box">
+                <img src="{% static 'images/99.avif'%}" alt=""/>
+                <div class="hov-in">
+                    <a href="http://127.0.0.1:8000/shop"><i></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="ins-inner-box">
+                <img src="{% static 'images/100.avif'%}" alt=""/>
+                <div class="hov-in">
+                    <a href="http://127.0.0.1:8000/shop"><i></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End Instagram Feed  -->
+
+
+<!-- Start Footer  -->
+<footer>
+    <div class="footer-main">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-12 col-sm-12">
+                    <div class="footer-top-box">
+                        <h3>Business Time</h3>
+                        <ul class="list-time">
+                            <li>Monday - Friday: 08.00am to 05.00pm</li>
+                            <li>Saturday: 10.00am to 08.00pm</li>
+                            <li>Sunday: <span>Closed</span></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-12 col-sm-12">
+                    <div class="footer-top-box">
+                        <h3>HomeX</h3>
+                        <form class="newsletter-box">
+                            <div class="form-group">
+                                <input class="" type="email" name="Email" placeholder="Email Address*"/>
+                                <i class="fa fa-envelope"></i>
+                            </div>
+                            <button class="btn hvr-hover" type="submit">Submit</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-12 col-sm-12">
+                    <div class="footer-top-box">
+                        <h3>Social Media</h3>
+                        <p>Follow us on:</p>
+                        <ul>
+                            <li><a href="#"><i class="fab fa-facebook" aria-hidden="true"></i></a></li>
+                            <li><a href="#"><i class="fab fa-linkedin" aria-hidden="true"></i></a></li>
+                            <li><a href="#"><i class="fab fa-google-plus" aria-hidden="true"></i></a></li>
+                            <li><a href="#"><i class="fab fa-whatsapp" aria-hidden="true"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-lg-4 col-md-12 col-sm-12">
+                    <div class="footer-widget">
+                        <h4>About HomeX</h4>
+                               <p>Organic farmers and food producers grow and produce food without using synthetic chemicals such as pesticides and artificial fertilisers. They do not use genetically modified (GM) components or expose food to irradiation. Animal welfare and environmental sustainability are important issues for organic farmers.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-12 col-sm-12">
+                    <div class="footer-link">
+                        <h4>Information</h4>
+                        <ul>
+                            <li><a href="{% url 'about'%}">About Us</a></li>
+                            <li><a href="#">Customer Service</a></li>
+                            <li><a href="#">Our Sitemap</a></li>
+                            <li><a href="#">Terms &amp; Conditions</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Delivery Information</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-12 col-sm-12">
+                    <div class="footer-link-contact">
+                        <h4>Contact Us</h4>
+                        <ul>
+                            <li>
+                                <p><i class="fas fa-map-marker-alt"></i>Address: Green Fields <br>Vaddeswaram,<br> near K L University </p>
+                            </li>
+                            <li>
+                                <p><i class="fas fa-phone-square"></i>Phone: <a href="tel:+1-888705770">+91 7032172001 </a></p>
+                            </li>
+                            <li>
+                                <p><i class="fas fa-envelope"></i>Email: <a href="homeX@gmail.com">homeX@gmail.com</a>
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- End Footer  -->
+
+<!-- Start copyright  -->
+<div class="footer-copyright">
+    <p class="footer-company">All Rights Reserved. &copy; 2022 Design By SDP Batch 2165
+        <a href="https://html.design/">html design</a></p>
+</div>
+<!-- End copyright  -->
+
+<a href="#" id="back-to-top" title="Back to top" style="display: none;">&uarr;</a>
+
+<!-- ALL JS FILES -->
+<script src="{% static 'js/jquery-3.2.1.min.js'%}"></script>
+<script src="{% static 'js/popper.min.js'%}"></script>
+<script src="{% static 'js/bootstrap.min.js'%}"></script>
+<!-- ALL PLUGINS -->
+<script src="{% static 'js/jquery.superslides.min.js'%}"></script>
+<script src="{% static 'js/bootstrap-select.js'%}"></script>
+<script src="{% static 'js/inewsticker.js'%}"></script>
+<script src="{% static 'js/bootsnav.js'%}"></script>
+<script src="{% static 'js/images-loded.min.js'%}"></script>
+<script src="{% static 'js/isotope.min.js'%}"></script>
+<script src="{% static 'js/owl.carousel.min.js'%}"></script>
+<script src="{% static 'js/baguetteBox.min.js'%}"></script>
+<script src="{% static 'js/form-validator.min.js'%}"></script>
+<script src="{% static 'js/contact-form-script.js'%}"></script>
+<script src="{% static 'js/custom.js'%}"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+        crossorigin="anonymous"></script>
+</body>
+</html>

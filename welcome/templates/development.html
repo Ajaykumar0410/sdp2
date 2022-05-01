@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Development Page</title>
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    {% load static %}
+    <title> {% block title %}Home{% endblock %}</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/all.css' %}">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'css/responsive.css' %}">
+    <link rel="stylesheet" href="{% static 'css/custom.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+</head>
+<body>
+{% csrf_token %}
+<header class="main-header">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light navbar-default bootsnav">
+        <div class="container">
+            <div class="navbar-header">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-menu"
+                        aria-controls="navbars-rs-food" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand" href=""><img src="{% static 'images/logo.png' %}" class="logo" alt="" height="2opx"></a>
+            </div>
+
+            <div class="collapse navbar-collapse" id="navbar-menu">
+                <ul class="nav navbar-nav ml-auto" data-in="fadeInDown" data-out="fadeOutUp">
+                    <li class="nav-item active"><a class="nav-link" href ="{% url 'homepage' %}">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{% url 'about' %}">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{% url 'contact' %}">Contact Us</a></li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+
+            <!-- Start Atribute Navigation -->
+            <div class="attr-nav">
+                <ul>
+                    <li class="search"><a href="#"><i class="fa fa-search"></i></a></li>
+
+                </ul>
+            </div>
+            <!-- End Atribute Navigation -->
+        </div>
+
+    </nav>
+    <!-- End Navigation -->
+</header>
+<!-- End Main Top -->
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="banner-frame"><img class="img-fluid" src="{% static 'images/00001.jpg' %}" alt="" height="1500px" width="1500px"/>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <h2 class="noo-sh-title-top">MICOGREENS<span></span></h2>
+              <p>Organic food is food produced by methods complying with the standards of organic farming.Microgreens are young seedlings of edible vegetables and herbs. Unlike larger herbs and vegetables that take weeks or months to grow, microgreens can be harvested and eaten a week to 10 days after the cotyledon — a part of the embryo within the seed — leaves have developed.Microgreens are also a great source of beneficial plant compounds like antioxidants ( 4 ). What's more, their nutrient content is concentrated, which means that they often contain higher vitamin, mineral and antioxidant levels than the same quantity of mature greens ( 4 ).</p>
+             <br>
+            <a href="http://127.0.0.1:8000/details/"><button>contact</button></a>
+            </div>
+
+        </div>
+
+        <br>
+        <br>
+        <br>
+  <div class="container">
+      <div class = "row">
+
+  </div>
+
+
+
+        <div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="banner-frame"><img class="img-fluid" src="{% static 'images/00002.jpg' %}" alt=""height="1500px" width="1500px"/>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <h2 class="noo-sh-title-top">SPINACHA<span></span></h2>
+
+                <p> Integrated organic farming consists of integrated nutrients management and integrated pest management.Spinach is a nutritious and plant-based source of iron, a mineral that is crucial in transporting oxygen in the blood. Iron is also important for maintaining healthy pregnancies, supporting the immune system, and aiding digestive processes.The possible health benefits of consuming spinach include improving blood glucose control in people with diabetes, lowering the risk of cancer, and improving bone health. Spinach is typically safe to consume as part of a well-rounded, nutritious diet. However, some people may benefit from limiting their intake of this vegetable. Spinach is also rich in dietary oxalate. Consuming large amounts of oxalate in the diet can increase a person’s riskTrusted Source of developing kidney stones. Additionally, if someone is taking blood-thinners, such as warfarin, it is important that they do not suddenly begin to change the amount of food they eat containing vitamin K, such as spinach. These rapid dietary changes can interfere with these medications. Spinach is also high in potassium. In high concentrations, this substance can cause harmful effects to those with reduced kidney function.</p>
+             <br>
+            <a href="http://127.0.0.1:8000/details/"><button>contact</button></a>
+            </div>
+
+        </div>
+<br>
+            <br>
+            <br>
+        <div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="banner-frame"><img class="img-fluid" src="{% static 'images/00003.jpg' %}" alt=""height="1500px" width="1500px"/>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <h2 class="noo-sh-title-top">KALE<span></span></h2>
+
+                <p>The considerations about the environment and environment of the future. Kale is a popular vegetable and a member of the cabbage family. It is a cruciferous vegetable like cabbage, broccoli, cauliflower, collard greens and Brussels sprouts. There are many different types of kale. The leaves can be green or purple, and have either a smooth or curly shape.</p>
+             <br>
+            <a href="http://127.0.0.1:8000/details/"><button>contact</button></a>
+
+            </div>
+
+        </div>
+            <br>
+            <br>
+            <br>
+             <div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+
+                <div class="banner-frame"><img class="img-fluid" src="{% static 'images/00004.jpg' %}" alt=""height="1500px" width="1500px"/>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <h2 class="noo-sh-title-top">ARTICHOKE<span></span></h2>
+                <p>In India, approx 2.78 million hectare area is covered by organic agriculture.artichoke, (Cynara cardunculus, variety scolymus), also called globe artichoke or French artichoke, large thistlelike perennial plant of the aster family (Asteraceae) grown for its edible flower buds. The thick bracts and the receptacle of the immature flower head, known as the heart, are a culinary delicacy.Artichokes have an earthy flavor with herbaceous notes. The petals of the artichoke have a crunchy texture while the heart is much softer and has a more intense flavor.</p>
+                 <br>
+            <a href="http://127.0.0.1:8000/details/"><button>contact</button></a>
+            </div>
+
+        </div>
+                 <br>
+                 <br>
+                 <br>
+                      <div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="banner-frame"><img class="img-fluid" src="{% static 'images/00005.jpg' %}" alt=""height="1500px" width="1500px"/>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                 <h2 class="noo-sh-title-top">WATERCRESS<span></span></h2>
+                <br>
+
+                <p> Another environmental benefit of organic farming is the reduction of energy use. Watercress is a dark green, leafy succulent plant. It is part of the cruciferous family, also known as the mustard family, along with kale, broccoli, arugula and Brussels sprouts, and shares their peppery bite. When shopping for watercress, look for emerald green plants without a lot of yellowing.Eating watercress can help support the health of your heart. Antioxidants (carotenoids in particular) have been linked to lower blood pressure, lower risk of heart disease, and even a lower risk of heart attacks and strokes.Watercress is small to medium in size with many leaflets that grow on thin stems connected to a cluster of roots. The green leaves are ovate to round in shape with scalloped edges.</p>
+             <br>
+            <a href="http://127.0.0.1:8000/details/"><button>contact</button></a>
+            </div>
+
+        </div>
+                          <br>
+                          <br>
+                          <br>
+
+
+
+
+<!-- Start Footer  -->
+<footer>
+    <div class="footer-main">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-12 col-sm-12">
+                    <div class="footer-top-box">
+                        <h3>Business Time</h3>
+                        <ul class="list-time">
+                            <li>Monday - Friday: 08.00am to 05.00pm</li>
+                            <li>Saturday: 10.00am to 08.00pm</li>
+                            <li>Sunday: <span>Closed</span></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-12 col-sm-12">
+                    <div class="footer-top-box">
+                        <h3>HomeX</h3>
+                        <form class="newsletter-box">
+                            <div class="form-group">
+                                <input class="" type="email" name="Email" placeholder="Email Address*"/>
+                                <i class="fa fa-envelope"></i>
+                            </div>
+                            <button class="btn hvr-hover" type="submit">Submit</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-12 col-sm-12">
+                    <div class="footer-top-box">
+                        <h3>Social Media</h3>
+                        <p>Follow us on:</p>
+                        <ul>
+                            <li><a href="#"><i class="fab fa-facebook" aria-hidden="true"></i></a></li>
+                            <li><a href="#"><i class="fab fa-linkedin" aria-hidden="true"></i></a></li>
+                            <li><a href="#"><i class="fab fa-google-plus" aria-hidden="true"></i></a></li>
+                            <li><a href="#"><i class="fab fa-whatsapp" aria-hidden="true"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-lg-4 col-md-12 col-sm-12">
+                    <div class="footer-widget">
+                        <h4>About HomeX</h4>
+                               <p> Leafy vegetables are particularly rich in mineral nutrient and iron. Iron deficiency leads to anaemia, a common health problem among pregnant and lactating women and also children. Inclusion of greens in daily diet would help prevent anaemia and promote good health.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-12 col-sm-12">
+                    <div class="footer-link">
+                        <h4>Information</h4>
+                        <ul>
+                            <li><a href="{% url 'about'%}">About Us</a></li>
+                            <li><a href="#">Customer Service</a></li>
+                            <li><a href="#">Our Sitemap</a></li>
+                            <li><a href="#">Terms &amp; Conditions</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Delivery Information</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-12 col-sm-12">
+                    <div class="footer-link-contact">
+                        <h4>Contact Us</h4>
+                        <ul>
+                            <li>
+                                <p><i class="fas fa-map-marker-alt"></i>Address: Green Fields <br>Vaddeswaram,<br> near K L University </p>
+                            </li>
+                            <li>
+                                <p><i class="fas fa-phone-square"></i>Phone: <a href="tel:+1-888705770">+91 7032172001</a></p>
+                            </li>
+                            <li>
+                                <p><i class="fas fa-envelope"></i>Email: <a href="homeX@gmail.com">homeX@gmail.com</a>
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- End Footer  -->
+
+<!-- Start copyright  -->
+<div class="footer-copyright">
+    <p class="footer-company">All Rights Reserved. &copy; 2022  Design By SDP Batch 2165
+        <a href="https://html.design/">html design</a></p>
+</div>
+<!-- End copyright  -->
+
+<a href="#" id="back-to-top" title="Back to top" style="display: none;">&uarr;</a>
+
+<!-- ALL JS FILES -->
+<script src="{% static 'js/jquery-3.2.1.min.js'%}"></script>
+<script src="{% static 'js/popper.min.js'%}"></script>
+<script src="{% static 'js/bootstrap.min.js'%}"></script>
+<!-- ALL PLUGINS -->
+<script src="{% static 'js/jquery.superslides.min.js'%}"></script>
+<script src="{% static 'js/bootstrap-select.js'%}"></script>
+<script src="{% static 'js/inewsticker.js'%}"></script>
+<script src="{% static 'js/bootsnav.js'%}"></script>
+<script src="{% static 'js/images-loded.min.js'%}"></script>
+<script src="{% static 'js/isotope.min.js'%}"></script>
+<script src="{% static 'js/owl.carousel.min.js'%}"></script>
+<script src="{% static 'js/baguetteBox.min.js'%}"></script>
+<script src="{% static 'js/form-validator.min.js'%}"></script>
+<script src="{% static 'js/contact-form-script.js'%}"></script>
+<script src="{% static 'js/custom.js'%}"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+        crossorigin="anonymous"></script>
+</body>
+</html>

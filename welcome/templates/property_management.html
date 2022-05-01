@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Property Management Page</title>
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    {% load static %}
+    <title> {% block title %}Home{% endblock %}</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/all.css' %}">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'css/responsive.css' %}">
+    <link rel="stylesheet" href="{% static 'css/custom.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+</head>
+<body>
+{% csrf_token %}
+<header class="main-header">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light navbar-default bootsnav">
+        <div class="container">
+            <div class="navbar-header">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-menu"
+                        aria-controls="navbars-rs-food" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand" href=""><img src="{% static 'images/logo.png' %}" class="logo" alt="" height="2opx"></a>
+            </div>
+
+            <div class="collapse navbar-collapse" id="navbar-menu">
+                <ul class="nav navbar-nav ml-auto" data-in="fadeInDown" data-out="fadeOutUp">
+                    <li class="nav-item active"><a class="nav-link" href ="{% url 'homepage' %}">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{% url 'about' %}">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{% url 'contact' %}">Contact Us</a></li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+
+            <!-- Start Atribute Navigation -->
+            <div class="attr-nav">
+                <ul>
+                    <li class="search"><a href="#"><i class="fa fa-search"></i></a></li>
+
+                </ul>
+            </div>
+            <!-- End Atribute Navigation -->
+        </div>
+
+    </nav>
+    <!-- End Navigation -->
+</header>
+<!-- End Main Top -->
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="banner-frame"><img class="img-fluid" src="{% static 'images/asif1.jpg' %}" alt="" height="1500px" width="1500px"/>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <h2 class="noo-sh-title-top">MICROBIAL<span></span></h2>
+              <p> In comparison, microbial fertilizer is a kind of green fertilizer based on functional microbial strains, not only improves soil nutrients, improves crop stress and disease resistance, promotes plant growth, but also shows no pollution to the environment[7, 8].Based on type of microorganism, the bio-fertilizer can also be classified as follows: Bacterial Biofertilizers: e.g. Rhizobium, Azospirilium, Azotobacter, Phosphobacteria. Fungal Biofertilizers: e.g. Mycorhiza. Algal Biofertilizers: e.g. Blue Green Algae (BGA) and Azolla.It has been reported that microbial fertilizers can increase crop yields, improve biodiversity and soil fertility, reduce the need for chemical fertilizers, recycle organic wastes and, conse- quently, abate environmental pollution.Microbes in biofertilizers provide atmospheric nitrogen directly to plants. They aid in solubilisation and mineralisation of other plant nutrients like phosphates.</p>
+             <br>
+            <a href="http://127.0.0.1:8000/details/"><button>contact</button></a>
+            </div>
+
+        </div>
+
+        <br>
+        <br>
+        <br>
+  <div class="container">
+      <div class = "row">
+
+  </div>
+
+
+
+        <div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="banner-frame"><img class="img-fluid" src="{% static 'images/asif2.jpg' %}" alt=""height="1500px" width="1500px"/>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <h2 class="noo-sh-title-top">FACT ORGANIC<span></span></h2>
+
+                <p>Integrated organic farming consists of integrated nutrients management and integrated pest management.FACT Organic Plus is plant and animal based organic manure marketed by FACT. It contains high nutrient content and serves as soil ameliorant which increases soil organic matter content and moisture holding capacity. It also reduces bulk density of soil and thus increases efficiency of crop production.</p>
+             <br>
+            <a href="http://127.0.0.1:8000/details/"><button>contact</button></a>
+            </div>
+
+        </div>
+<br>
+            <br>
+            <br>
+        <div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="banner-frame"><img class="img-fluid" src="{% static 'images/asif3.jpg' %}" alt=""height="1500px" width="1500px"/>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <h2 class="noo-sh-title-top">HYDRPONIC FERTILIZER<span></span></h2>
+
+                <p> The considerations about the environment and environment of the future. A fertilizer specially developed for the cultivation of plants in water, which only enables effective cultivation without soil. A good hydroponic fertilizer is characterized by the fact that it contains all nutrients and trace elements necessary for healthy growth in a directly usable form.General Hydroponics Flora Grow, Bloom, Micro Combo Fertilizer Set. Fox Farm Liquid Nutrient Trio Soil Formula. General Hydroponics Organic Go Box. Advanced Nutrients Bloom, Micro and Grow. MasterBlend 4-18-38 Complete Combo Kit Fertilizer. </p>
+             <br>
+            <a href="http://127.0.0.1:8000/details/"><button>contact</button></a>
+
+            </div>
+
+        </div>
+            <br>
+            <br>
+            <br>
+             <div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+
+                <div class="banner-frame"><img class="img-fluid" src="{% static 'images/asif4.jpg' %}" alt=""height="1500px" width="1500px"/>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <h2 class="noo-sh-title-top">SHAKTHIMAN PLUS<span></span></h2>
+                <p> In India, approx 2.78 million hectare area is covered by organic agriculture. Shaktiman Square Fertilizer Broadcaster is a square shaped implement used for spreading fertilizer into fields of crops. Shaktiman Square Fertilizer Broadcaster is used to spread fertilizer into farmers fields with greater efficiency than manual methods. </p>
+             <br>
+            <a href="http://127.0.0.1:8000/details/"><button>contact</button></a>
+            </div>
+
+        </div>
+                 <br>
+                 <br>
+                 <br>
+                      <div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="banner-frame"><img class="img-fluid" src="{% static 'images/0005.jpg' %}" alt=""height="1000px" width="1000px"/>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                 <h2 class="noo-sh-title-top">N P K<span></span></h2>
+                <br>
+              <
+                <p>Another environmental benefit of organic farming is the reduction of energy use. NPK on a fertilizer package stands for nitrogen, phosphorus, and potassium, the three nutrients that compose complete fertilizers. While the description of the fertilizer may not expressly say "NPK," you will see a series of three numbers, often separated by dashes.These numbers correspond, respectively, to the percentage of nitrogen, phosphorus, and potassium in that fertilizer.Not all types of plants have the same nutrient requirements, and you can sometimes do more harm than good when applying supplements haphazardly. Applying a fertilizer high in nitrogen will cause certain plants to put all their energy into producing foliage at the expense of flowers.</p>
+
+            <br>
+            <a href="http://127.0.0.1:8000/details/"><button>contact</button></a>
+            </div>
+
+        </div>
+                          <br>
+                          <br>
+                          <br>
+
+
+
+<!-- Start Footer  -->
+<footer>
+    <div class="footer-main">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-12 col-sm-12">
+                    <div class="footer-top-box">
+                        <h3>Business Time</h3>
+                        <ul class="list-time">
+                            <li>Monday - Friday: 08.00am to 05.00pm</li>
+                            <li>Saturday: 10.00am to 08.00pm</li>
+                            <li>Sunday: <span>Closed</span></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-12 col-sm-12">
+                    <div class="footer-top-box">
+                        <h3>HomeX</h3>
+                        <form class="newsletter-box">
+                            <div class="form-group">
+                                <input class="" type="email" name="Email" placeholder="Email Address*"/>
+                                <i class="fa fa-envelope"></i>
+                            </div>
+                            <button class="btn hvr-hover" type="submit">Submit</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-12 col-sm-12">
+                    <div class="footer-top-box">
+                        <h3>Social Media</h3>
+                        <p>Follow us on:</p>
+                        <ul>
+                            <li><a href="#"><i class="fab fa-facebook" aria-hidden="true"></i></a></li>
+                            <li><a href="#"><i class="fab fa-linkedin" aria-hidden="true"></i></a></li>
+                            <li><a href="#"><i class="fab fa-google-plus" aria-hidden="true"></i></a></li>
+                            <li><a href="#"><i class="fab fa-whatsapp" aria-hidden="true"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-lg-4 col-md-12 col-sm-12">
+                    <div class="footer-widget">
+                        <h4>About HomeX</h4>
+                               <p>Real estate is property consisting of land and the buildings on it, along with its natural resources such as crops, minerals or water; immovable property of this nature; an interest vested in this an item of real property,buildings or housing in general.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-12 col-sm-12">
+                    <div class="footer-link">
+                        <h4>Information</h4>
+                        <ul>
+                            <li><a href="{% url 'about'%}">About Us</a></li>
+                            <li><a href="#">Customer Service</a></li>
+                            <li><a href="#">Our Sitemap</a></li>
+                            <li><a href="#">Terms &amp; Conditions</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Delivery Information</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-12 col-sm-12">
+                    <div class="footer-link-contact">
+                        <h4>Contact Us</h4>
+                        <ul>
+                            <li>
+                                <p><i class="fas fa-map-marker-alt"></i>Address: Green Fields <br>Vaddeswaram,<br> near K L University </p>
+                            </li>
+                            <li>
+                                <p><i class="fas fa-phone-square"></i>Phone: <a href="tel:+1-888705770">+91 7032172001</a></p>
+                            </li>
+                            <li>
+                                <p><i class="fas fa-envelope"></i>Email: <a href="homeX@gmail.com">homeX@gmail.com</a>
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- End Footer  -->
+
+<!-- Start copyright  -->
+<div class="footer-copyright">
+    <p class="footer-company">All Rights Reserved. &copy; 2021  Design By SDP Batch 178
+        <a href="https://html.design/">html design</a></p>
+</div>
+<!-- End copyright  -->
+
+<a href="#" id="back-to-top" title="Back to top" style="display: none;">&uarr;</a>
+
+<!-- ALL JS FILES -->
+<script src="{% static 'js/jquery-3.2.1.min.js'%}"></script>
+<script src="{% static 'js/popper.min.js'%}"></script>
+<script src="{% static 'js/bootstrap.min.js'%}"></script>
+<!-- ALL PLUGINS -->
+<script src="{% static 'js/jquery.superslides.min.js'%}"></script>
+<script src="{% static 'js/bootstrap-select.js'%}"></script>
+<script src="{% static 'js/inewsticker.js'%}"></script>
+<script src="{% static 'js/bootsnav.js'%}"></script>
+<script src="{% static 'js/images-loded.min.js'%}"></script>
+<script src="{% static 'js/isotope.min.js'%}"></script>
+<script src="{% static 'js/owl.carousel.min.js'%}"></script>
+<script src="{% static 'js/baguetteBox.min.js'%}"></script>
+<script src="{% static 'js/form-validator.min.js'%}"></script>
+<script src="{% static 'js/contact-form-script.js'%}"></script>
+<script src="{% static 'js/custom.js'%}"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+        crossorigin="anonymous"></script>
+</body>
+</html>

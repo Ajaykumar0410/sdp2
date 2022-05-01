@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Commercial Page</title>
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    {% load static %}
+    <title> {% block title %}Home{% endblock %}</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/all.css' %}">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'css/responsive.css' %}">
+    <link rel="stylesheet" href="{% static 'css/custom.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+</head>
+<body>
+{% csrf_token %}
+<header class="main-header">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light navbar-default bootsnav">
+        <div class="container">
+            <div class="navbar-header">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-menu"
+                        aria-controls="navbars-rs-food" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand" href=""><img src="{% static 'images/logo.png' %}" class="logo" alt="" height="2opx"></a>
+            </div>
+
+            <div class="collapse navbar-collapse" id="navbar-menu">
+                <ul class="nav navbar-nav ml-auto" data-in="fadeInDown" data-out="fadeOutUp">
+                    <li class="nav-item active"><a class="nav-link" href ="{% url 'homepage' %}">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{% url 'about' %}">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{% url 'contact' %}">Contact Us</a></li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+
+            <!-- Start Atribute Navigation -->
+            <div class="attr-nav">
+                <ul>
+                    <li class="search"><a href="#"><i class="fa fa-search"></i></a></li>
+
+                </ul>
+            </div>
+            <!-- End Atribute Navigation -->
+        </div>
+
+    </nav>
+    <!-- End Navigation -->
+</header>
+<!-- End Main Top -->
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="banner-frame"><img class="img-fluid" src="{% static 'images/kumar1.jpeg' %}" alt="" height="1500px" width="1500px"/>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <h2 class="noo-sh-title-top">WHEAT<span></span></h2>
+
+                <p> Wheat is a grass widely cultivated for its seed, a cereal grain which is a worldwide staple food. The many species of wheat together make up the genus Triticum; the most widely grown is common wheat (T. aestivum).In addition to being a major source of starch and energy, wheat also provides substantial amounts of a number of components which are essential or beneficial for health, notably protein, vitamins (notably B vitamins), dietary fiber, and phytochemicals.Wheat is typically milled into flour which is then used to make a wide range of foods including bread, crumpets, muffins, noodles, pasta, biscuits, cakes, pastries, cereal bars, sweet and savoury snack foods, crackers, crisp-breads, sauces and confectionery (e.g. liquorice).</p>
+             <br>
+            <a href="http://127.0.0.1:8000/details/"><button>connect</button></a>
+            </div>
+
+        </div>
+
+        <br>
+        <br>
+        <br>
+  <div class="container">
+      <div class = "row">
+
+  </div>
+
+
+
+        <div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="banner-frame"><img class="img-fluid" src="{% static 'images/kumar2.webp' %}" alt=""height="1500px" width="1500px"/>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <h2 class="noo-sh-title-top">RICE<span></span></h2>
+
+                <p> Integrated organic farming consists of integrated nutrients management and integrated pest management.Rice is the seed of the grass species Oryza sativa (Asian rice) or less commonly Oryza glaberrima (African rice). The name wild rice is usually used for species of the genera Zizania and Porteresia, both wild and domesticated, although the term may also be used for primitive or uncultivated varieties of Oryza.As a complex carb, it is the primary source of energy for over half of the world's people. Depending on the strain of rice, it can contain decent amounts of fibre, protein, vitamin B, iron and manganese.</p>
+            <br>
+            <a href="http://127.0.0.1:8000/details/"><button>connect</button></a>
+            </div>
+
+        </div>
+<br>
+            <br>
+            <br>
+        <div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="banner-frame"><img class="img-fluid" src="{% static 'images/kumar3.webp' %}" alt=""height="1500px" width="1500px"/>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <h2 class="noo-sh-title-top">OATS<span></span></h2>
+
+                <p>The considerations about the environment and environment of the future.Oats, formally named Avena sativa, is a type of cereal grain from the Poaceae grass family of plants. The grain refers specifically to the edible seeds of oat grass, which is what ends up in our breakfast bowls.Lowers blood sugar levels. Provides antioxidants. Promotes healthy bacteria in your gut. Helps you to feel full to manage your weight. Eases constipation. Relieves skin itching and irritation. Lowers your chance of colon cancer. </p>
+             <br>
+            <a href="http://127.0.0.1:8000/details/"><button>connect</button></a>
+
+            </div>
+
+        </div>
+            <br>
+            <br>
+            <br>
+             <div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+
+                <div class="banner-frame"><img class="img-fluid" src="{% static 'images/kumar4.jpeg' %}" alt=""height="1500px" width="1500px"/>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <h2 class="noo-sh-title-top">BARLEY<span></span></h2>
+                <p> Grown in a variety of environments, barley is the fourth largest grain crop globally, after wheat, rice, and corn. Barley is commonly used in breads, soups, stews, and health products, though it is primarily grown as animal fodder and as a source of malt for alcoholic beverages, especially beer.Barley is an excellent source of dietary fiber, but also contains other essential minerals, including magnesium, manganese, and selenium. </p>
+             <br>
+            <a href="http://127.0.0.1:8000/details/"><button>connect</button></a>
+            </div>
+
+        </div>
+                 <br>
+                 <br>
+                 <br>
+                      <div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="banner-frame"><img class="img-fluid" src="{% static 'images/kumar5.jpg' %}" alt=""height="1500px" width="1500px"/>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                 <h2 class="noo-sh-title-top">SORGHUM<span></span></h2>
+                <br>
+
+                <p> Another environmental benefit of organic farming is the reduction of energy use. Some popular crops such as corn require nitrogen rich soil which is a high energy use product if farmed in conventional ways.Sorghum is a genus of about 25 species of flowering plants in the grass family (Poaceae). Some of these species are grown as cereals for human consumption and some in pastures for animals. One species, Sorghum bicolor, was originally domesticated in Africa and has since spread throughout the globe.Sorghum is a versatile cereal grain used for human consumption as well as livestock feed, alcoholic beverages, and biofuel production. When sorghum is consumed with its outer hull intact, it's a good source of dietary fiber and antioxidants.</p>
+             <br>
+            <a href="http://127.0.0.1:8000/details/"><button>connect</button></a>
+            </div>
+
+        </div>
+                          <br>
+                          <br>
+                          <br>
+
+<!-- Start Top Search -->
+<div class="top-search">
+    <div class="container">
+        <div class="input-group">
+            <span class="input-group-addon"><i class="fa fa-search"></i></span>
+            <input type="text" class="form-control" placeholder="Search">
+            <span class="input-group-addon close-search"><i class="fa fa-times"></i></span>
+        </div>
+    </div>
+</div>
+<div class="instagram-box">
+    <div class="main-instagram owl-carousel owl-theme">
+        <div class="item">
+            <div class="ins-inner-box">
+                <img src="{% static 'images/101.jpg'%}" alt=""height="200px" width="200px"/>
+                <div class="hov-in">
+                    <a href="http://127.0.0.1:8000/shop"><i></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="ins-inner-box">
+                <img src="{% static 'images/102.avif' %}" alt=""height="200px" width="200px"/>
+                <div class="hov-in">
+                    <a href="http://127.0.0.1:8000/shop"><i></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="ins-inner-box">
+                <img src="{% static 'images/103.avif'%}" alt=""height="200px" width="200px"/>
+                <div class="hov-in">
+                    <a href="http://127.0.0.1:8000/shop"><i></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="ins-inner-box">
+                <img src="{% static 'images/104.avif'%}" alt=""height="200px" width="200px"/>
+                <div class="hov-in">
+                    <a href="http://127.0.0.1:8000/shop"><i></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="ins-inner-box">
+                <img src="{% static 'images/106.avif'%}" alt=""height="200px" width="200px"/>
+                <div class="hov-in">
+                    <a href="http://127.0.0.1:8000/shop"><i></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="ins-inner-box">
+                <img src="{% static 'images/107.avif'%}" alt=""height="200px" width="200px"/>
+                <div class="hov-in">
+                    <a href="http://127.0.0.1:8000/shop"><i></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="ins-inner-box">
+                <img src="{% static 'images/108.avif'%}" alt=""height="200px" width="200px"/>
+                <div class="hov-in">
+                    <a href="http://127.0.0.1:8000/shop"><i></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="ins-inner-box">
+                <img src="{% static 'images/109.avif'%}" alt=""height="200px" width="200px"/>
+                <div class="hov-in">
+                    <a href="http://127.0.0.1:8000/shop"><i></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="ins-inner-box">
+                <img src="{% static 'images/110.webp'%}" alt=""height="200px" width="200px"/>
+                <div class="hov-in">
+                    <a href="http://127.0.0.1:8000/shop"><i></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="ins-inner-box">
+                <img src="{% static 'images/111.webp'%}" alt=""height="200px" width="200px"/>
+                <div class="hov-in">
+                    <a href="http://127.0.0.1:8000/shop"><i></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End Instagram Feed  -->
+
+
+<!-- Start Footer  -->
+<footer>
+    <div class="footer-main">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-12 col-sm-12">
+                    <div class="footer-top-box">
+                        <h3>Business Time</h3>
+                        <ul class="list-time">
+                            <li>Monday - Friday: 08.00am to 05.00pm</li>
+                            <li>Saturday: 10.00am to 08.00pm</li>
+                            <li>Sunday: <span>Closed</span></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-12 col-sm-12">
+                    <div class="footer-top-box">
+                        <h3>HomeX</h3>
+                        <form class="newsletter-box">
+                            <div class="form-group">
+                                <input class="" type="email" name="Email" placeholder="Email Address*"/>
+                                <i class="fa fa-envelope"></i>
+                            </div>
+                            <button class="btn hvr-hover" type="submit">Submit</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-12 col-sm-12">
+                    <div class="footer-top-box">
+                        <h3>Social Media</h3>
+                        <p>Follow us on:</p>
+                        <ul>
+                            <li><a href="#"><i class="fab fa-facebook" aria-hidden="true"></i></a></li>
+                            <li><a href="#"><i class="fab fa-linkedin" aria-hidden="true"></i></a></li>
+                            <li><a href="#"><i class="fab fa-google-plus" aria-hidden="true"></i></a></li>
+                            <li><a href="#"><i class="fab fa-whatsapp" aria-hidden="true"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-lg-4 col-md-12 col-sm-12">
+                    <div class="footer-widget">
+                        <h4>HomeX</h4>
+                               <p>cereal, also called grain, any grass (family Poaceae) yielding starchy seeds suitable for food. Most grains have similar dietary properties; they are rich in carbohydrates but comparatively low in protein and naturally deficient in calcium and vitamin A.Cereal grains are the basis of human food, with the vast majority being used directly with minimal processing.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-12 col-sm-12">
+                    <div class="footer-link">
+                        <h4>Information</h4>
+                        <ul>
+                            <li><a href="{% url 'about'%}">About Us</a></li>
+                            <li><a href="#">Customer Service</a></li>
+                            <li><a href="#">Our Sitemap</a></li>
+                            <li><a href="#">Terms &amp; Conditions</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Delivery Information</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-12 col-sm-12">
+                    <div class="footer-link-contact">
+                        <h4>Contact Us</h4>
+                        <ul>
+                            <li>
+                                <p><i class="fas fa-map-marker-alt"></i>Address: Green Fields <br>Vaddeswaram,<br> near K L University </p>
+                            </li>
+                            <li>
+                                <p><i class="fas fa-phone-square"></i>Phone: <a href="tel:+1-888705770">+91 7032172001</a></p>
+                            </li>
+                            <li>
+                                <p><i class="fas fa-envelope"></i>Email: <a href="mailto:homeX@gmail.com">homeX@gmail.com</a>
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- End Footer  -->
+
+<!-- Start copyright  -->
+<div class="footer-copyright">
+    <p class="footer-company">All Rights Reserved. &copy; 2022 Design By SDP Batch 2165
+        <a href="https://html.design/">html design</a></p>
+</div>
+<!-- End copyright  -->
+
+<a href="#" id="back-to-top" title="Back to top" style="display: none;">&uarr;</a>
+
+<!-- ALL JS FILES -->
+<script src="{% static 'js/jquery-3.2.1.min.js'%}"></script>
+<script src="{% static 'js/popper.min.js'%}"></script>
+<script src="{% static 'js/bootstrap.min.js'%}"></script>
+<!-- ALL PLUGINS -->
+<script src="{% static 'js/jquery.superslides.min.js'%}"></script>
+<script src="{% static 'js/bootstrap-select.js'%}"></script>
+<script src="{% static 'js/inewsticker.js'%}"></script>
+<script src="{% static 'js/bootsnav.js'%}"></script>
+<script src="{% static 'js/images-loded.min.js'%}"></script>
+<script src="{% static 'js/isotope.min.js'%}"></script>
+<script src="{% static 'js/owl.carousel.min.js'%}"></script>
+<script src="{% static 'js/baguetteBox.min.js'%}"></script>
+<script src="{% static 'js/form-validator.min.js'%}"></script>
+<script src="{% static 'js/contact-form-script.js'%}"></script>
+<script src="{% static 'js/custom.js'%}"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+        crossorigin="anonymous"></script>
+</body>
+</html>
